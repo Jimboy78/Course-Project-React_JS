@@ -3,9 +3,10 @@ import {
     Container,
     Stack,
     Text,
-    Link,
     useColorModeValue,
   } from '@chakra-ui/react';
+import { Link } from "react-router-dom";
+
 
 const Footer = () =>{
     return (
@@ -21,9 +22,9 @@ const Footer = () =>{
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}>
             <Stack direction={'row'} spacing={6}>
-                <Link href={'/'}>Home</Link>
-                <Link href={'/about_us'}>About</Link>
-                <Link href={'/catalogue'}>Catalogo</Link>
+                <Link to ={'/'}>Home</Link>
+                <Link to ={'/about_us'}>About</Link>
+                <Link to ={'/catalogue'}>Catalogo</Link>
             </Stack>
             <Text>Proyecto Curso React CoderHouse</Text>
             </Container>
