@@ -8,7 +8,7 @@ const ItemListContainer = () => {
         <Box boxSize='2xl' mt="10">
           <Image 
           textAlign="center"
-          src="https://www.9minecraft.net/wp-content/uploads/2022/06/Random-Item-Giver-Data-Pack-Thumbnail.png"/>
+          src="https://www.pngplay.com/wp-content/uploads/6/E-Commerce-Logo-PNG-Clipart-Background.png"/>
         </Box>
       </Center>
     </>

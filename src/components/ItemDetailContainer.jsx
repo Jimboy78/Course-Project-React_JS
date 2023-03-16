@@ -1,15 +1,20 @@
 import ItemDetail from './ItemDetail'
-import { useParams } from 'react-router-dom';
-import items from '../items.json';
-
-const ItemDetailContainer= ({items}) => {
-    const { id } = useParams()
-    console.log(id)
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 
 
+const ItemDetailContainer= () => {
+  const getItems = async() =>{
+    const response = await fetch("https://fakestoreapi.com/products")
+    const data = await response.json()
+    return data
+  }
+  const [data, setItems] = useState([])
+    useEffect(() => {
+      getItems().then((item) => setItems(item))
+    }, [] )
   return <>
-    <h1>Item {id}</h1>
-    <ItemDetail items= {items}/>
+    <ItemDetail items = {data}/>
   </>
 }
 

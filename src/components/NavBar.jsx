@@ -22,13 +22,10 @@ const NavBar = () => {
         <Image
           maxH={20}
           m="1"
-          src= "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/657be565-f4b2-4e47-841f-1b0711b0205b/d72kffl-364e6d5e-4703-425a-8ceb-6a82ff1fab77.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY1N2JlNTY1LWY0YjItNGU0Ny04NDFmLTFiMDcxMWIwMjA1YlwvZDcya2ZmbC0zNjRlNmQ1ZS00NzAzLTQyNWEtOGNlYi02YTgyZmYxZmFiNzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vbeGbNHy-DxfE0-53D-QJc5Xq4XBC3NNeRPlsCxgGFg"
+          src= "https://cdn-icons-png.flaticon.com/512/1966/1966273.png"
           />
       </Link>
       <Breadcrumb m={2} p={3} spacing='8px' color="white">
-        <BreadcrumbItem >
-          <BreadcrumbLink href='/'>Home</BreadcrumbLink>
-        </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink href='/about_us'>About</BreadcrumbLink>
         </BreadcrumbItem>
@@ -45,14 +42,17 @@ const NavBar = () => {
               Categorias
             </MenuButton>
             <MenuList className='menu-list'>
-              <Link to={`/category/${"1"}`}>
-                <MenuItem color="black" justifyContent="center">1</MenuItem>
+              <Link to={`/category/${"men's clothing"}`}>
+                <MenuItem color="black" justifyContent="center">Ropa de hombre</MenuItem>
               </Link>
-              <Link to={`/category/${"2"}`}>
-                <MenuItem color="black" justifyContent="center">2</MenuItem>
+              <Link to={`/category/${"jewelery"}`}>
+                <MenuItem color="black" justifyContent="center">Joyas</MenuItem>
               </Link>
-              <Link to={`/category/${"3"}`}>
-                <MenuItem color="black" justifyContent="center">3</MenuItem>
+              <Link to={`/category/${"electronics"}`}>
+                <MenuItem color="black" justifyContent="center">Electronica</MenuItem>
+              </Link>
+              <Link to={`/category/${"women's clothing"}`}>
+                <MenuItem color="black" justifyContent="center">Ropa de mujer</MenuItem>
               </Link>
             </MenuList>
           </Menu>
